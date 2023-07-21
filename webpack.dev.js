@@ -20,32 +20,6 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        type: "asset",
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        use: [
-          {
-            loader: ImageMinimizerPlugin.loader,
-            enforce: "pre",
-            options: {
-              minimizer: {
-                implementation: ImageMinimizerPlugin.imageminMinify,
-                options: {
-                  plugins: [
-                    "imagemin-gifsicle",
-                    "imagemin-mozjpeg",
-                    "imagemin-pngquant",
-                    "imagemin-svgo",
-                  ],
-                },
-              },
-            },
-          },
-        ],
-      },
     ],
   },
   plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin({title: 'Development'})],
