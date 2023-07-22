@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA;IACI,gCAAgC;IAChC,kBAAkB;AACtB,C","sources":["webpack://homework_22_webpack-config/./src/main.css"],"sourcesContent":["body {\n    background-color: darkolivegreen;\n    border-radius: 8px;\n}"],"names":[],"sourceRoot":""}
